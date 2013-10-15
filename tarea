@@ -1,0 +1,47 @@
+Pr‡ctica laboratorio 5:
+
+ÀCu‡l es el error en el c—digo del mŽtodo para calcular el m‡ximo comœn divisor?
+
+Se ejecuta s—lo si el denominador es 0, s—lo es necesario cambiar la comparaci—n de == a != para que el programa funcione. 
+
+
+
+ÀQuŽ comandos del depurador utiliz— para detectarlo? Describa la sesi—n de depuraci—n.
+
+Utilizamos l para ver el c—digo, s para ir ejecut‡ndolo l’nea a l’nea en busca de fallos y p "expresi—n" para ver los valores de las variables y como cambiaban.
+
+$ ruby -rdebug gcd.rb 
+Debug.rb
+Emacs support available.
+
+gcd.rb:1:def gcd(u, v)
+(rdb:1) l
+[-4, 5] in gcd.rb
+=> 1  def gcd(u, v)
+   2    u, v = u.abs, v.abs
+   3    while v == 0
+   4      u, v = v, u % v
+   5    end
+(rdb:1) s
+gcd.rb:9:puts gcd(6,3)
+(rdb:1) s
+gcd.rb:2:  u, v = u.abs, v.abs
+(rdb:1) p u
+6
+(rdb:1) p v
+3
+(rdb:1) s
+gcd.rb:3:  while v == 0
+(rdb:1) p v
+3
+(rdb:1) p u
+6
+(rdb:1) s
+gcd.rb:6:  u
+(rdb:1) s
+6
+
+#Se comprueba que al ser v distinto de 0 nunca entramos en el bucle y al no entrar en el no modific‡bamos nada, por lo que el programa devolvia el numerador tal cual.
+
+
+Escriba la direcci—n 'HTTP' del repositorio que contiene el desarrollo de su pr‡ctica.
