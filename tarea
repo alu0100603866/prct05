@@ -4,8 +4,6 @@ Práctica laboratorio 5:
 
 Se ejecuta sólo si el denominador es 0, sólo es necesario cambiar la comparación de == a != para que el programa funcione. 
 
-
-
 ¿Qué comandos del depurador utilizó para detectarlo? Describa la sesión de depuración.
 
 Utilizamos l para ver el código, s para ir ejecutándolo línea a línea en busca de fallos y p "expresión" para ver los valores de las variables y como cambiaban.
@@ -45,3 +43,5 @@ gcd.rb:6:  u
 
 
 Escriba la dirección 'HTTP' del repositorio que contiene el desarrollo de su práctica.
+
+https://github.com/alu0100603866/prct05.git
