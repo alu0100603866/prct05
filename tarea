@@ -1,12 +1,12 @@
-Práctica laboratorio 5:
+Practica laboratorio 5:
 
-¿Cuál es el error en el código del método para calcular el máximo común divisor?
+¿Cual es el error en el código del método para calcular el máximo comun divisor?
 
-Se ejecuta sólo si el denominador es 0, sólo es necesario cambiar la comparación de == a != para que el programa funcione. 
+Se ejecuta solo si el denominador es 0, solo es necesario cambiar la comparación de == a != para que el programa funcione. 
 
-¿Qué comandos del depurador utilizó para detectarlo? Describa la sesión de depuración.
+¿Que comandos del depurador utilizo para detectarlo? Describa la sesion de depuracion.
 
-Utilizamos l para ver el código, s para ir ejecutándolo línea a línea en busca de fallos y p "expresión" para ver los valores de las variables y como cambiaban.
+Utilizamos l para ver el código, s para ir ejecutando linea a linea en busca de fallos y p "expresion" para ver los valores de las variables y como cambiaban.
 
 $ ruby -rdebug gcd.rb 
 Debug.rb
@@ -39,7 +39,7 @@ gcd.rb:6:  u
 (rdb:1) s
 6
 
-#Se comprueba que al ser v distinto de 0 nunca entramos en el bucle y al no entrar en el no modificábamos nada, por lo que el programa devolvia el numerador tal cual.
+#Se comprueba que al ser v distinto de 0 nunca entramos en el bucle y al no entrar en el no modificabamos nada, por lo que el programa devolvia el numerador tal cual.
 
 
 Escriba la dirección 'HTTP' del repositorio que contiene el desarrollo de su práctica.
